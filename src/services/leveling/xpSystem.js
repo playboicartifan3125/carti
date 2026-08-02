@@ -47,10 +47,11 @@ export const addXp = wrapServiceBoundary(async function addXp(client, guild, mem
       }
     }
 
-    if (didLevelUp) {
-      if (config.announceLevelUp) {
-        await sendLevelUpAnnouncement(guild, member, levelData, config);
-      }
+if (didLevelUp) {
+    if (config.announceLevelUp) {
+        // await sendLevelUpAnnouncement(guild, member, levelData, config);
+    }
+}
 
       try {
         await logEvent({
